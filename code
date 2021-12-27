@@ -1,0 +1,21 @@
+import calendar
+m,d,y=(map(int,input().split()))
+
+days=['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY']
+print(days[calendar.weekday(y,m,d)])
+
+
+#elaborated method
+
+import calendar
+m,d,y=map(int,input().split())
+days=['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY']
+wk=calendar.weekday(y,m,d)
+print(days[wk])
+
+#short code
+
+import calendar
+m,d,y=map(int,input().split())
+
+print(['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY'][calendar.weekday(y,m,d)])
